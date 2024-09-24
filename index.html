@@ -4,77 +4,371 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Life Balance</title>
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/static/css/style.css">
   <script src="/static/js/script.js"></script>
 </head>
-<body class="bg-gray-900">
+<body class="bg-gray-900 text-white">
   <main>
     <section id="navbar">
-       <nav class="bg-white border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-    </a>
-    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-        </li>
-      </ul>
+      <nav class="bg-gray-800 border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap">Life Balance</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-800">
+              <li>
+                <a href="#" class="block py-2 px-3 text-blue-500 rounded bg-gray-700 md:bg-transparent md:text-blue-500 md:p-0" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Services</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section id="home">
+      
+
+<div id="animation-carousel" class="relative w-full" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+       <!-- Item 1 -->
+      <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="https://img.freepik.com/fotos-premium/ginasio-treinando-pesos-pesados-em-pilhas-linha-de-treino-de-fitness-de-pesos-alinhados-em-uma-academia_116317-10992.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+          <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
+
+
+<section class="bg-gray-800 text-white p-8">
+  <div class="max-w-screen-xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">Transforme sua Vida Hoje!</h2>
+    <p class="mb-6">Agende uma aula experimental gratuita ou inscreva-se agora para começar sua jornada de aprendizado!</p>
+    <div class="flex justify-center space-x-4">
+      <a href="#schedule" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Agende uma Aula Experimental</a>
+      <a href="#signup" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Inscreva-se Agora</a>
+      <a href="#contact" class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Entre em Contato</a>
     </div>
   </div>
-       </nav>
+
+  <section class="bg-gray-900 text-white p-8">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Destaques</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Promoções Atuais</h3>
+          <p>Aproveite 20% de desconto em todas as aulas até o final do mês!</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Novos Equipamentos</h3>
+          <p>Estamos atualizando nosso estoque com os mais recentes equipamentos de treinamento!</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Eventos Especiais</h3>
+          <p>Participe do nosso evento de inauguração com atividades gratuitas e sorteios!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="bg-gray-900 text-white p-8">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">O Que Nossos Membros Dizem</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <img src="https://via.placeholder.com/150" alt="Membro 1" class="rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-2">João Silva</h3>
+          <p class="text-gray-300">"As aulas mudaram minha vida! A equipe é super profissional e atenciosa."</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <img src="https://via.placeholder.com/150" alt="Membro 2" class="rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-2">Maria Oliveira</h3>
+          <p class="text-gray-300">"Adorei os novos equipamentos! O ambiente é sempre acolhedor."</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <img src="https://via.placeholder.com/150" alt="Membro 3" class="rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-2">Carlos Pereira</h3>
+          <p class="text-gray-300">"Participei do evento especial e foi incrível! Recomendo a todos."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</section>
+
     </section>
-    <section id="home"></section>
-    <section id="about"></section>
-    <section id="services"></section>
-    <section id="structure"></section>
+    <section id="about">
+      <section class="bg-gray-800 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Objetivos da Academia</h2>
+          <p>Nosso principal objetivo é proporcionar um ambiente saudável e motivador, onde todos possam alcançar suas metas pessoais de fitness e bem-estar.</p>
+          <ul class="list-disc list-inside mt-4">
+            <li>Promover a saúde e o bem-estar geral.</li>
+            <li>Oferecer treinamentos personalizados.</li>
+            <li>Fomentar uma comunidade inclusiva e acolhedora.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-gray-900 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">História da Academia</h2>
+          <p>A Academia foi fundada em 2010 por um grupo de entusiastas do fitness que acreditavam no poder transformador do exercício físico. Nossa missão é ajudar cada membro a alcançar seus objetivos de saúde e fitness em um ambiente de apoio e respeito.</p>
+        </div>
+      </section>
+      
+      <section class="bg-gray-800 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Nossa Equipe</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+              <img src="https://via.placeholder.com/100" alt="Treinador 1" class="rounded-full mx-auto mb-4">
+              <h4 class="font-semibold">Carlos Almeida</h4>
+              <p>Especialização: Personal Trainer</p>
+              <p>Com mais de 5 anos de experiência, Carlos é apaixonado por ajudar os outros a atingir seus objetivos de fitness.</p>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+              <img src="https://via.placeholder.com/100" alt="Treinador 2" class="rounded-full mx-auto mb-4">
+              <h4 class="font-semibold">Fernanda Souza</h4>
+              <p>Especialização: Nutrição Esportiva</p>
+              <p>Fernanda oferece consultoria em nutrição para ajudar nossos membros a manterem uma alimentação saudável.</p>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+              <img src="https://via.placeholder.com/100" alt="Treinador 3" class="rounded-full mx-auto mb-4">
+              <h4 class="font-semibold">Rafael Lima</h4>
+              <p>Especialização: Yoga e Bem-Estar</p>
+              <p>Rafael é um instrutor de yoga dedicado, focado em promover o equilíbrio entre corpo e mente.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-900 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Valores e Filosofia</h2>
+          <p>Nossos valores fundamentais incluem:</p>
+          <ul class="list-disc list-inside mt-4">
+            <li>Respeito: Valorizamos cada membro e promovemos um ambiente inclusivo.</li>
+            <li>Dedicação: Comprometemo-nos a ajudar nossos membros a alcançar seus objetivos.</li>
+            <li>Inovação: Buscamos constantemente novas abordagens e técnicas para aprimorar a experiência de nossos membros.</li>
+          </ul>
+        </div>
+      </section>
+      
+    </section>
+    <section id="services">
+      <section class="bg-gray-800 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Planos de Assinatura</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+              <h3 class="text-2xl font-semibold mb-2">Mensal</h3>
+              <p class="text-xl">R$ 99/mês</p>
+              <ul class="list-disc list-inside mt-4">
+                <li>Acesso a todas as aulas</li>
+                <li>Atendimento ao cliente 24/7</li>
+              </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+              <h3 class="text-2xl font-semibold mb-2">Trimestral</h3>
+              <p class="text-xl">R$ 279/3 meses</p>
+              <ul class="list-disc list-inside mt-4">
+                <li>Acesso a todas as aulas</li>
+                <li>1 sessão de avaliação física gratuita</li>
+              </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+              <h3 class="text-2xl font-semibold mb-2">Anual</h3>
+              <p class="text-xl">R$ 999/ano</p>
+              <ul class="list-disc list-inside mt-4">
+                <li>Acesso a todas as aulas</li>
+                <li>2 sessões de avaliação física gratuitas</li>
+                <li>Desconto de 10% em produtos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-900 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Aulas e Programas</h2>
+          <ul class="list-disc list-inside">
+            <li class="mb-4">
+              <h4 class="font-semibold">Yoga</h4>
+              <p>Segundas e Quartas, 19:00 - 20:00</p>
+              <p>Instrutor: Rafael Lima</p>
+            </li>
+            <li class="mb-4">
+              <h4 class="font-semibold">Pilates</h4>
+              <p>Terças e Quintas, 18:00 - 19:00</p>
+              <p>Instrutor: Fernanda Souza</p>
+            </li>
+            <li class="mb-4">
+              <h4 class="font-semibold">Treinamento Funcional</h4>
+              <p>Segundas, Quartas e Sextas, 07:00 - 08:00</p>
+              <p>Instrutor: Carlos Almeida</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-gray-800 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Personal Training</h2>
+          <p>Oferecemos treinamento personalizado para atender às suas necessidades específicas. Nossos pacotes incluem:</p>
+          <ul class="list-disc list-inside mt-4">
+            <li>Pacote de 5 sessões: R$ 400</li>
+            <li>Pacote de 10 sessões: R$ 750</li>
+            <li>Consulta inicial gratuita para avaliação de metas</li>
+          </ul>
+          <p class="mt-4">Para agendar uma sessão, entre em contato conosco pelo nosso site ou telefone!</p>
+        </div>
+      </section>
+
+      <section class="bg-gray-900 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Serviços Adicionais</h2>
+          <ul class="list-disc list-inside">
+            <li>Aulas de Yoga</li>
+            <li>Treinamento de Pilates</li>
+            <li>Consultoria com nutricionistas</li>
+            <li>Massagens relaxantes</li>
+            <li>Workshops de bem-estar</li>
+          </ul>
+          <p class="mt-4">Consulte nossa equipe para mais informações sobre horários e preços!</p>
+        </div>
+      </section>
+      
+    </section>
+    <section id="structure">
+      <section class="bg-gray-900 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Estrutura da Academia</h2>
+          <iframe class="w-full h-64 md:h-96" src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" frameborder="0" allowfullscreen></iframe>
+          <p class="mt-4">Assista ao vídeo para conhecer todas as instalações que oferecemos!</p>
+        </div>
+      </section>
+
+      <section class="bg-gray-800 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Galeria de Equipamentos</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+              <img src="https://via.placeholder.com/300" alt="Equipamento 1" class="mb-2 rounded-lg">
+              <h4 class="font-semibold">Esteira</h4>
+              <p>A melhor para cardio e aquecimento.</p>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+              <img src="https://via.placeholder.com/300" alt="Equipamento 2" class="mb-2 rounded-lg">
+              <h4 class="font-semibold">Pesos Livres</h4>
+              <p>Ideal para treinamento de força.</p>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+              <img src="https://via.placeholder.com/300" alt="Equipamento 3" class="mb-2 rounded-lg">
+              <h4 class="font-semibold">Bicicleta Ergométrica</h4>
+              <p>Ótima opção para treinos de resistência.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-900 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Áreas de Treinamento</h2>
+          <ul class="list-disc list-inside">
+            <li><strong>Área de Cardio:</strong> Equipamentos como esteiras, bicicletas e elípticos.</li>
+            <li><strong>Musculação:</strong> Equipamentos de pesos livres e máquinas de musculação.</li>
+            <li><strong>Estúdio de Aulas:</strong> Aulas de yoga, pilates e outras atividades em grupo.</li>
+            <li><strong>Piscina:</strong> Para aulas de natação e aquecimento.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-gray-800 text-white p-8">
+        <div class="max-w-screen-xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Manutenção e Higiene</h2>
+          <p>Na nossa academia, priorizamos a limpeza e a manutenção de todos os equipamentos e instalações. Realizamos limpezas diárias e manutenções regulares para garantir a segurança e o conforto de nossos membros.</p>
+        </div>
+      </section>
+
+      
+    </section>
     <section id="contact"></section>
     <section id="faq"></section>
     <section id="footer">
-      
-
-<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
-  </span>
-  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-      <li>
-          <a href="#" class="hover:underline me-4 md:me-6">About</a>
-      </li>
-      <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-      </li>
-      <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-      </li>
-      <li>
-          <a href="#" class="hover:underline">Contact</a>
-      </li>
-  </ul>
-  </div>
-</footer>
-
+      <footer class="bg-gray-800 rounded-lg shadow m-4">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-400 sm:text-center">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+          <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-400 sm:mt-0">
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </section>
   </main>
 

@@ -13,13 +13,17 @@
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 </head>
 
-<body class="bg-black">
+<body>
   <main>
     <section id="navbar">
-      <nav class="bg-gray-900 border-gray-200 dark:bg-gray-900 fixed top-0 left-0 w-full z-50">
+      <nav class="border-gray-200 dark:bg-gray-900 fixed top-0 left-0 w-full z-50">
+        <!-- Modificação no span para fundo preto e texto azul -->
+        <span class="text-blue-600 text-center bg-black block p-2">
+          <center>1% Melhor a cada dia.</center>
+        </span>
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="/static/img/Logo.png" class="h-8" alt="Flowbite Logo" />
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/static/img/Logo.png" class="h-8" alt="Logo Life Balance" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap text-blue-600">Life Balance</span>
           </a>
           <button data-collapse-toggle="navbar-default" type="button"
@@ -35,34 +39,34 @@
             <ul
               class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-900">
               <li>
-                <a href="#"
+                <a href="#home"
                   class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page">Home</a>
               </li>
               <li>
-                <a href="#"
+                <a href="#about"
                   class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
               </li>
               <li>
-                <a href="#"
+                <a href="#services"
                   class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
               </li>
               <li>
-                <a href="#"
+                <a href="#pricing"
                   class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
               </li>
               <li>
-                <a href="#"
+                <a href="#contact"
                   class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <br><br>
+      <br><br><br><br>
     </section>
 
-    </section>
+
     <section id="home">
       <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
@@ -70,27 +74,27 @@
           <!-- Item 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="/static/img/banner.png"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Banner 1">
           </div>
           <!-- Item 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="/static/img/banner-1.png"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Banner 2">
           </div>
           <!-- Item 3 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="/static/img/banner-2.png"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Banner 3">
           </div>
           <!-- Item 4 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="/static/img/banner-3.png"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Banner 4">
           </div>
           <!-- Item 5 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="/static/img/banner-4.png"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Banner 5">
           </div>
         </div>
         <!-- Slider indicators -->
@@ -125,124 +129,140 @@
           data-carousel-next>
           <span
             class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="m1 9 4-4-4-4" />
+                d="M1 1l4 4-4 4" />
             </svg>
             <span class="sr-only">Next</span>
           </span>
         </button>
       </div>
-
-
-      <section>
-
-
-        <section class="bg-white dark:bg-gray-900">
-          <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-            <h1
-              class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-              We invest in the world’s potential</h1>
-            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Here at
-              Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and
-              drive economic growth.</p>
-            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-              <a href="#"
-                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                Get started
-                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </a>
-              <a href="#"
-                class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-70">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </section>
-
-      </section>
     </section>
-    <section id="footer">
-      <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-              <img src="/static/img/Logo.png" class="h-8" alt="Flowbite Logo" />
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Life Balance</span>
-            </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-              <li>
-                <a href="#" class="hover:underline me-4 md:me-6">About</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">Contact</a>
-              </li>
+
+    <section id="about" class="mt-10 p-10">
+      <div class="max-w-screen-lg mx-auto text-center">
+        <h2 class="text-4xl font-bold text-white">Sobre Nós</h2>
+        <p class="mt-4 text-gray-400">
+          Na Life Balance, nosso objetivo é promover a saúde e o bem-estar, oferecendo serviços personalizados para
+          ajudá-lo a encontrar o equilíbrio em sua vida. Nossa equipe de profissionais é dedicada a fornecer
+          soluções eficazes para atender suas necessidades.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="mt-10 p-10 bg-gray-800">
+      <div class="max-w-screen-lg mx-auto text-center">
+        <h2 class="text-4xl font-bold text-white">Nossos Serviços</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-blue-500">Aconselhamento Nutricional</h3>
+            <p class="text-gray-400">Oferecemos aconselhamento personalizado para ajudá-lo a atingir seus objetivos
+              de saúde.</p>
+          </div>
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-blue-500">Treinamento Físico</h3>
+            <p class="text-gray-400">Nossos profissionais de fitness estão aqui para ajudá-lo a se manter ativo e
+              saudável.</p>
+          </div>
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-blue-500">Aconselhamento Psicológico</h3>
+            <p class="text-gray-400">Oferecemos apoio psicológico para ajudá-lo a encontrar o equilíbrio emocional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="mt-10 p-10">
+      <div class="max-w-screen-lg mx-auto text-center">
+        <h2 class="text-4xl font-bold text-white">Preços</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-blue-500">Pacote Básico</h3>
+            <p class="text-gray-400">R$ 100/mês</p>
+            <ul class="text-left text-gray-400 mt-4">
+              <li>Acesso a aulas online</li>
+              <li>Consultas mensais</li>
             </ul>
           </div>
-          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
-              href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-blue-500">Pacote Avançado</h3>
+            <p class="text-gray-400">R$ 200/mês</p>
+            <ul class="text-left text-gray-400 mt-4">
+              <li>Acesso a aulas online</li>
+              <li>Consultas semanais</li>
+              <li>Acompanhamento personalizado</li>
+            </ul>
+          </div>
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-blue-500">Pacote Premium</h3>
+            <p class="text-gray-400">R$ 300/mês</p>
+            <ul class="text-left text-gray-400 mt-4">
+              <li>Acesso a aulas online</li>
+              <li>Consultas diárias</li>
+              <li>Acompanhamento 24/7</li>
+            </ul>
+          </div>
         </div>
-      </footer>
-
-
+      </div>
     </section>
+
+    <section id="hours" class="mt-10 p-10 bg-gray-800">
+      <div class="max-w-screen-lg mx-auto text-center">
+        <h2 class="text-4xl font-bold text-white">Horário de Funcionamento</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <div class="bg-gray-900 text-white p-4 rounded-lg shadow-lg flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-3 text-blue-400" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2" />
+              <circle cx="12" cy="12" r="9" />
+            </svg>
+            <div>
+              <h3 class="text-xl font-semibold">Segunda a Sexta</h3>
+              <p>08:00 - 18:00</p>
+            </div>
+          </div>
+          <div class="bg-gray-900 text-white p-4 rounded-lg shadow-lg flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-3 text-blue-400" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2" />
+              <circle cx="12" cy="12" r="9" />
+            </svg>
+            <div>
+              <h3 class="text-xl font-semibold">Sábado</h3>
+              <p>09:00 - 14:00</p>
+            </div>
+          </div>
+          <div class="bg-gray-900 text-white p-4 rounded-lg shadow-lg flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-3 text-blue-400" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2" />
+              <circle cx="12" cy="12" r="9" />
+            </svg>
+            <div>
+              <h3 class="text-xl font-semibold">Domingo</h3>
+              <p>Fechado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mt-10 p-10">
+      <div class="max-w-screen-lg mx-auto text-center">
+        <h2 class="text-4xl font-bold text-white">Contato</h2>
+        <p class="mt-4 text-gray-400">Entre em contato conosco para mais informações.</p>
+        <div class="mt-8">
+          <p class="text-gray-400">Telefone: (11) 1234-5678</p>
+          <p class="text-gray-400">Email: contato@lifebalance.com.br</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-10 p-6 bg-gray-900 text-center text-gray-400">
+      <p>&copy; 2024 Life Balance. Todos os direitos reservados.</p>
+    </footer>
   </main>
-  <!-- Botão para rolar para cima -->
-  <button id="scrollToTopBtn"
-    class="scroll-to-top fixed bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition ease-in-out duration-300">
-    <i class="bi bi-caret-up"></i>
-  </button>
-
-  <!-- Botão flutuante do WhatsApp -->
-  <a href="https://wa.me/5513991056918" target="_blank" id="whatsappBtn"
-    class="whatsapp-btn bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition ease-in-out duration-300 flex items-center">
-    <h1><i class="bi bi-whatsapp"></i></h1>
-  </a>
-  <!-- Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const menuButton = document.querySelector('[data-collapse-toggle]');
-      const navbar = document.getElementById('navbar-default');
-
-      menuButton.addEventListener('click', function () {
-        navbar.classList.toggle('hidden');
-      });
-    });
-  </script>
-
-  <script>
-    // Seleciona o botão
-    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-    // Mostra ou oculta o botão dependendo da rolagem da página
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) { // Ajuste a posição do botão conforme necessário
-        scrollToTopBtn.style.display = 'block';
-      } else {
-        scrollToTopBtn.style.display = 'none';
-      }
-    });
-
-    // Rola para o topo quando o botão é clicado
-    scrollToTopBtn.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-  </script>
 </body>
 
 </html>

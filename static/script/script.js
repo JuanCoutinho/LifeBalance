@@ -30,3 +30,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   
+
+  // Mostra o botão quando a página é rolada para baixo
+window.onscroll = function() {
+  mostrarBotao();
+};
+
+function mostrarBotao() {
+  const botao = document.getElementById("botaoTopo");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      botao.style.display = "block";
+  } else {
+      botao.style.display = "none";
+  }
+}
+
+// Volta ao topo da página quando o botão é clicado
+function voltarAoTopo() {
+  document.body.scrollTop = 0; // Para Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+}

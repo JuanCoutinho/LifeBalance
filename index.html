@@ -18,9 +18,48 @@
     <section id="navbar">
       <nav class="border-gray-200 dark:bg-gray-900 fixed top-0 left-0 w-full z-50 fade-in">
         <!-- Modificação no span para fundo preto e texto azul -->
-        <span class="text-blue-600 text-center bg-black block p-2">
-          <center>1% Melhor a cada dia.</center>
-        </span>
+        <style>
+          .shining-text {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            color: #1E40AF; /* Azul forte */
+            background-color: black;
+            padding: 5px;
+            position: relative;
+            overflow: hidden;
+          }
+        
+          .shining-text::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              90deg,
+              transparent,
+              rgba(255, 255, 255, 0.8),
+              transparent
+            );
+            animation: shine 3s infinite;
+          }
+        
+          @keyframes shine {
+            0% {
+              left: -100%;
+            }
+            100% {
+              left: 100%;
+            }
+          }
+        </style>
+        
+        <span class="shining-text p-0">1% Melhor a cada dia.</span>
+        
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/static/img/Logo.png" class="h-8" alt="Logo Life Balance" />
